@@ -1,5 +1,6 @@
+BUILD
 build
-tests/test_project
+tests/test_project/
 .idea
 
 .vs/

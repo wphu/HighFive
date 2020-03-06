@@ -196,6 +196,10 @@ struct data_converter<boost::multi_array<Eigen::Matrix<T, M, N>, Dims>, void> {
 };
 #endif  // H5_USE_BOOST
 
+template <typename S, int M, int N>
+struct h5_continuous<Eigen::Matrix<S, M, N>> :
+    std::true_type {};
+
 }  // namespace details
 
 }  // namespace HighFive
